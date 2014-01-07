@@ -1,0 +1,120 @@
+
+
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+/*	background-image:url('../img/background.jpg')!important;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	height: 100%;
+	width: 100%*/;
+
+}
+
+div {
+display: block;
+}
+
+#res_720 {
+	position: absolute;
+	height: 720px;
+	margin-left: -640px;
+	margin-top: -360px;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 1280px;
+	background-image:url(../img/background_1.png); 
+}
+
+#header_logo {
+	position: relative;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	/*background-color: green;*/
+	width: 98.4%;
+}
+
+.logo {
+	height:100px;
+	width: 30px;
+}
+
+.logo_image {
+	width:445px;
+	height:auto;
+}
+
+.column_1 {
+	width: 850px;
+	height: 550px;
+}
+
+.column_2 {
+	position: absolute;
+	width: 430px;
+	margin-left: 850px;
+	height: 550px;
+	margin-top: -550px;
+
+}
+
+#image_ad {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 840px;
+	height: 100%;
+	background-color: blue;
+}
+
+#event_health_info {
+	position: absolute;
+	margin-left: 10px;
+	height: 400px;
+	background-color: brown;
+	width: 410px;
+
+}
+
+#weather_time {
+ position: absolute;
+ height: 140px;
+ background-color: orange;
+ width: 410px;
+ margin-top: 410px;
+	margin-left: 10px;
+}
+
+
+#hashtag_footer {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+	height: 100px;
+	background-color: pink;
+	width: 98.4%;
+
+}
+
+
+#container {
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+
+}
+
+#main_container {
+	
+	height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
