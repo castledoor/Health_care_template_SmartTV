@@ -65,6 +65,15 @@ display: block;
 
 }
 
+#website {
+	float: right;
+	clear:both;
+}
+
+#phone_number {
+	float: right;
+}
+
 #image_ad {
 	position: relative;
 	margin-top: 10px;
