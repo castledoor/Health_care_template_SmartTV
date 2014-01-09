@@ -70,6 +70,10 @@ display: block;
 	clear:both;
 }
 
+#slides-controls {
+	display: none;
+}
+
 #phone_number {
 	float: right;
 }
@@ -87,6 +91,12 @@ display: block;
 .ad {
 	width: 1010px;
 	height: auto;
+}
+
+.ad_1 {
+	width: 844px;
+	height: 550px;
+
 }
 
 #wrapper {
