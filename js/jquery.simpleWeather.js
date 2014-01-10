@@ -10,6 +10,31 @@
  *
  * Version 2.3.0 - Last updated: June 16 2013
  */
+
+
+ $(document).ready(function() {
+   $.simpleWeather({
+     zipcode: '30301',
+     woeid: '',
+     location: '',
+     unit: 'f',
+     success: function(weather) {
+       html = '<h2 class="weather-text_1">'+weather.temp+'&deg;</h2>';
+       html += '<ul class="weather-text_2"><li>'+weather.city+', '+weather.region+'</li>';
+       html += '<li class="currently weather-text_2">'+weather.currently+'</li>';
+       html += '<img id="weather-image" src='+weather.image+'>';
+
+       
+   
+       $("#weather").html(html);
+     },
+     error: function(error) {
+       $("#weather").html('<p>'+error+'</p>');
+     }
+   });
+ });   
+
+
 (function($) {
 	"use strict";
 	$.extend({
