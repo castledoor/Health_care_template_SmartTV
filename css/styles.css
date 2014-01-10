@@ -68,6 +68,13 @@ display: block;
 #website {
 	float: right;
 	clear:both;
+	font-family: 'Nexa Light';
+	color: #808080;
+	font-size: 34px;
+}
+
+span {
+	font-family: 'Nexa Bold'
 }
 
 #slides-controls {
@@ -76,6 +83,9 @@ display: block;
 
 #phone_number {
 	float: right;
+	font-family: 'Nexa Bold';
+	color: #808080;
+	font-size: 50px;
 }
 
 #image_ad {
@@ -173,4 +183,15 @@ display: block;
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url(../font/Nexa_Bold.oft) format('opentype');
+}
+
+@font-face {
+   font-family: "Nexa Light";
+   src: url(../font/Nexa_Light.otf) format('opentype');
 }
