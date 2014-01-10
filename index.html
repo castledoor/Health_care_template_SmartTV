@@ -19,6 +19,45 @@
     <style>
     #slideshow{height:100%; width:840px; float:left}#slides{height:550px; position:relative}.slide{height:550px; width:840px; overflow:hidden; position:absolute; background:#000; color:#fff}#slides-controls{width:60px; background-color:#fff; height:20px; margin-left:auto; margin-right:auto; padding:5px}#slides-controls a{margin:5px; width:8px; height:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; background:#F60; border:1px solid #fff; text-indent:-9000px; display:block; overflow:hidden; float:left}#slides-controls a:hover{background:#F30}#slides-controls a.highlight{background:#fff; border:1px solid #F30}
     </style>
+
+    <script>
+      function date_time(id)
+      {
+              date = new Date;
+              year = date.getFullYear();
+              month = date.getMonth();
+              months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+              d = date.getDate();
+              day = date.getDay();
+              days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+              h = date.getHours();
+              if(h<10)
+              {
+                      h = "0"+h;
+              }
+              m = date.getMinutes();
+              if(m<10)
+              {
+                      m = "0"+m;
+              }
+              s = date.getSeconds();
+              if(s<10)
+              {
+                      s = "0"+s;
+              }
+              result = '<div id="day">' +days[day]+'</div> </br><div id="month"> '+months[month]+' '+d+' '+year+'</div></br><div id="time">  '+h+':'+m+'</div>'; 
+              document.getElementById(id).innerHTML = result;
+              setTimeout('date_time("'+id+'");','1000');
+              return true;
+      }
+
+      </script>
+
+      
+              <script type="text/javascript" src="date_time.js"></script>
+         <span id="date_time"></span>
+                  <script type="text/javascript">window.onload = date_time('date_time');</script>
+              
   </head>
   <body  onload="setUpSlideShow()">
 
@@ -66,8 +105,7 @@
           </div>
         </div>
         <div id="weather_time">
-          <iframe src="http://free.timeanddate.com/clock/i3z3xlna/n179/fcfff/tct/pct/ftb/tt0/th2/ts1/tb4" frameborder="0" width="223" height="34" allowTransparency="true"></iframe>
-
+         
           
         </div>
       </div>

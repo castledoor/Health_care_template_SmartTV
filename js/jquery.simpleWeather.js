@@ -20,8 +20,8 @@
      unit: 'f',
      success: function(weather) {
        html = '<h2 class="weather-text_1">'+weather.temp+'&deg;</h2>';
-       html += '<ul class="weather-text_2"><li>'+weather.city+', '+weather.region+'</li>';
-       html += '<li class="currently weather-text_2">'+weather.currently+'</li>';
+       // html += '<ul class="weather-text_2"><li>'+weather.city+', '+weather.region+'</li>';
+       // html += '<li class="currently weather-text_2">'+weather.currently+'</li>';
        html += '<img id="weather-image" src='+weather.image+'>';
 
        
