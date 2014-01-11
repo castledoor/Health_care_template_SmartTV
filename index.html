@@ -14,7 +14,7 @@
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/jquery.simpleWeather.js"></script>
     
-    <link rel="stylesheet" href="css/healthcare.css">
+    <link rel="stylesheet" href="css/healthcare_2.css">
 
     <style>
     #slideshow{height:100%; width:840px; float:left}#slides{height:550px; position:relative}.slide{height:550px; width:840px; overflow:hidden; position:absolute; background:#000; color:#fff}#slides-controls{width:60px; background-color:#fff; height:20px; margin-left:auto; margin-right:auto; padding:5px}#slides-controls a{margin:5px; width:8px; height:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; background:#F60; border:1px solid #fff; text-indent:-9000px; display:block; overflow:hidden; float:left}#slides-controls a:hover{background:#F30}#slides-controls a.highlight{background:#fff; border:1px solid #F30}
@@ -45,7 +45,7 @@
               {
                       s = "0"+s;
               }
-              result = '<div id="day">' +days[day]+'</div> </br><div id="month"> '+months[month]+' '+d+' '+year+'</div></br><div id="time">  '+h+':'+m+'</div>'; 
+              result = '<div id="day">' +days[day] +'</div> </br><div id="month"> '+months[month]+' '+d+' '+year+'</div>'; 
               document.getElementById(id).innerHTML = result;
               setTimeout('date_time("'+id+'");','1000');
               return true;
@@ -53,10 +53,12 @@
 
       </script>
 
+
+
       
-              <script type="text/javascript" src="date_time.js"></script>
-         <span id="date_time"></span>
-                  <script type="text/javascript">window.onload = date_time('date_time');</script>
+        <script type="text/javascript" src="date_time.js"></script>
+          <span id="date_time"></span>
+        <script type="text/javascript">window.onload = date_time('date_time');</script>
               
   </head>
   <body  onload="setUpSlideShow()">
@@ -104,7 +106,33 @@
             </div>
           </div>
         </div>
+         <h1 id="health_tip">FLU SIGNS AND SYMPTOMS<h1/>
         <div id="weather_time">
+
+
+
+
+          <script type="text/javascript">
+
+            var currentTime = new Date()
+            var hours = currentTime.getHours()
+            var minutes = currentTime.getMinutes()
+
+            if (minutes < 10)
+            minutes = "0" + minutes
+
+            var suffix = "AM";
+            if (hours >= 12) {
+            suffix = "PM";
+            hours = hours - 12;
+            }
+            if (hours == 0) {
+            hours = 12;
+            }
+
+            document.write("<div id='time'>" + hours + ":" + minutes + " " + suffix + "</div>")
+
+          </script>
          
           
         </div>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NexaBoldRegular';
+    src: url('nexa_bold.eot');
+    src: url('nexa_bold.eot') format('embedded-opentype'),
+         url('nexa_bold.woff') format('woff'),
+         url('nexa_bold.ttf') format('truetype'),
+         url('nexa_bold.svg#NexaBoldRegular') format('svg');
+}
