@@ -66,8 +66,8 @@ display: block;
 }
 
 #weather-image {
-	padding-left: 61px;
-	padding-top: 354px;
+	padding-left: 24px;
+	padding-top: 373px	
 
 }
 
@@ -86,7 +86,7 @@ iframe {
 	color: white;
 	width: 90px;
 	margin-left: 20px;
-	margin-top: 415px;
+	margin-top: 436px;
 	position: absolute;
 	font-size: 100px;
 
@@ -104,21 +104,44 @@ iframe {
 
 #day {
 	text-transform:uppercase;
-	font-size: 30px;
+	font-size: 29px;
+	margin-left: -90px;
+	position: absolute;
+	margin-top:105px;
+	font-family: "HelveticaLTStdLight"
 }
 
 #month {
-	font-family: "HelveticaLTStdBold"
+	font-family: "HelveticaLTStdBold";
+	margin-left: -85px;
+	margin-top: 120px;
+	font-size: 19px;
 	
 }
 
 #time {
 	color: white;
-	font-size: 39px;
+	font-size: 38px;
 	margin-top: 532px;
-	margin-left: 228px;
+	margin-left: 222px;
 	font-family: "HelveticaLTStdBold";
+	border-radius: 21px 21px 21px 21px;
+	position: relative;
+	z-index: 3;
 
+
+}
+
+#weather-square {
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.05);
+	border-radius: 3px 3px 3px 3px;
+	width:170px;
+	height: 110px;
+	background-color: #00aacf;
+	position: absolute;
+	z-index: 0;
+	margin-top: -111px;
+	margin-left: 216px;
 }
 #website {
 	float: right;
@@ -285,6 +308,15 @@ span {
          url('../fonts/helveticaltstd-bold.woff') format('woff'),
          url('../fonts/helveticaltstd-bold.ttf') format('truetype'),
          url('../fonts/helveticaltstd-bold.svg#HelveticaLTStdBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaLTStdLight';
+    src: url('../fonts/helveticaltstd-light.eot');
+    src: url('../fonts/helveticaltstd-light.eot') format('embedded-opentype'),
+         url('../fonts/helveticaltstd-light.woff') format('woff'),
+         url('../fonts/helveticaltstd-light.ttf') format('truetype'),
+         url('../fonts/helveticaltstd-light.svg#HelveticaLTStdLight') format('svg');
 }
 
 

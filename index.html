@@ -50,15 +50,10 @@
               setTimeout('date_time("'+id+'");','1000');
               return true;
       }
-
       </script>
-
-
-
-      
-        <script type="text/javascript" src="date_time.js"></script>
-          <span id="date_time"></span>
-        <script type="text/javascript">window.onload = date_time('date_time');</script>
+      <script type="text/javascript" src="date_time.js"></script>
+        <span id="date_time"></span>
+      <script type="text/javascript">window.onload = date_time('date_time');</script>
               
   </head>
   <body  onload="setUpSlideShow()">
@@ -133,6 +128,9 @@
             document.write("<div id='time'>" + hours + ":" + minutes + " " + suffix + "</div>")
 
           </script>
+          
+          <div id="weather-square">
+          </div>
          
           
         </div>
