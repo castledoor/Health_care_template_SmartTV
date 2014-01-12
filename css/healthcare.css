@@ -313,6 +313,12 @@ p{
     width: 100%;
 }
 
+#twitter-logo {
+	width: 33px;
+	margin-top: 5px;
+	padding-left: 13px;
+}
+
 @font-face {
     font-family: 'NexaBoldRegular';
     src: url('../fonts/nexa_bold.eot');
