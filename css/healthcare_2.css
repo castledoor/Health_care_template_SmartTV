@@ -106,7 +106,7 @@ iframe {
 #day {
 	text-transform:uppercase;
 	font-size: 29px;
-	margin-left: -90px;
+	margin-left: -80px;
 	position: absolute;
 	margin-top:105px;
 	font-family: "HelveticaLTStdLight"
@@ -114,7 +114,7 @@ iframe {
 
 #month {
 	font-family: "HelveticaLTStdBold";
-	margin-left: -85px;
+	margin-left: -90px;
 	margin-top: 120px;
 	font-size: 19px;
 	
@@ -124,9 +124,9 @@ iframe {
 	color: white;
 	font-size: 38px;
 	margin-top: 532px;
-	margin-left: 222px;
+	margin-left: 230px;
 	font-family: "HelveticaLTStdBold";
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 5px 5px 5px 5px;
 	position: relative;
 	z-index: 3;
 
@@ -150,7 +150,8 @@ iframe {
 	clear:both;
 	font-family: "NexaLightRegular";
 	color: #808080;
-	font-size: 34px;
+	font-size: 26px;
+	margin-top: 30px;
 }
 
 span {
@@ -158,19 +159,25 @@ span {
 	
 }
 
+#contact-info {
+
+}
+
 #slides-controls {
 	display: none;
 }
 
 .slide {
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 #phone_number {
 	float: right;
 	font-family: "NexaBoldRegular";
 	color: #808080;
-	font-size: 50px;
+	font-size: 35px;
+	position:relative;
+	margin-bottom: -27px;
 }
 
 
@@ -181,7 +188,7 @@ span {
 	margin-right: 10px;
 	width: 840px;
 	height: 100%;
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 5px 5px 5px 5px;
 
 	/*background-color: blue;*/
 }
@@ -204,7 +211,7 @@ span {
 }
 
 #middle {
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 5px 5px 5px 5px;
     overflow: hidden; 
     position: absolute;
     z-index: 3;
@@ -222,7 +229,7 @@ span {
 }
 
 #event_health_info {
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 5px 5px 5px 5px;
 	position: absolute;
 	margin-left: 10px;
 	height: 550px;
@@ -266,9 +273,10 @@ span {
 	margin-top: 10px;
 	margin-left: 10px;
 	position: relative;
-	height: 100px;
-	background-color: pink;
+	height: 37px;
+	background-color: #FBB03B;
 	width: 98.4%;
+	border-radius: 5px 5px 5px 5px;
 
 }
 
