@@ -1,8 +1,8 @@
 
 
 * {
-	list-style: none;
-	margin: 0;
+	/*list-style: none;
+*/	margin: 0;
 	padding: 0;
 }
 
@@ -18,6 +18,7 @@ body {
 div {
 display: block;
 }
+
 
 #res_720 {
 	position: absolute;
@@ -125,7 +126,7 @@ iframe {
 	margin-top: 532px;
 	margin-left: 222px;
 	font-family: "HelveticaLTStdBold";
-	border-radius: 21px 21px 21px 21px;
+	border-radius: 15px 15px 15px 15px;
 	position: relative;
 	z-index: 3;
 
@@ -143,6 +144,7 @@ iframe {
 	margin-top: -111px;
 	margin-left: 216px;
 }
+
 #website {
 	float: right;
 	clear:both;
@@ -161,7 +163,7 @@ span {
 }
 
 .slide {
-	border-radius: 21px 21px 21px 21px;
+	border-radius: 15px 15px 15px 15px;
 }
 
 #phone_number {
@@ -179,7 +181,7 @@ span {
 	margin-right: 10px;
 	width: 840px;
 	height: 100%;
-	border-radius: 21px 21px 21px 21px;
+	border-radius: 15px 15px 15px 15px;
 
 	/*background-color: blue;*/
 }
@@ -202,7 +204,7 @@ span {
 }
 
 #middle {
-    border-radius: 21px 21px 21px 21px;
+    border-radius: 15px 15px 15px 15px;
     overflow: hidden; 
     position: absolute;
     z-index: 3;
@@ -220,7 +222,7 @@ span {
 }
 
 #event_health_info {
-	border-radius: 21px 21px 21px 21px;
+	border-radius: 15px 15px 15px 15px;
 	position: absolute;
 	margin-left: 10px;
 	height: 550px;
@@ -247,6 +249,18 @@ span {
 	margin-left: 10px;
 }
 
+#tips {
+		font-family: "BebasNeueRegular";
+		color:white;
+		margin-left: 30px;
+		clear:both;
+		font-size: 25px;
+
+}
+
+.tips_list {
+	margin-bottom: 5px;
+}
 
 #hashtag_footer {
 	margin-top: 10px;
@@ -258,10 +272,20 @@ span {
 
 }
 
+p{
+	text-align: center;
+	clear:both;
+}
+
+#p {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
 #health_tip {
 	font-family: "BebasNeueRegular";
 	text-decoration:underline;
-	color:black;
+	color:white;
 	margin-top: -502px;
 	margin-left: 50px;
 	font-size: 35px;
