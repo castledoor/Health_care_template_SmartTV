@@ -160,6 +160,10 @@ span {
 	display: none;
 }
 
+.slide {
+	border-radius: 21px 21px 21px 21px;
+}
+
 #phone_number {
 	float: right;
 	font-family: "NexaBoldRegular";
@@ -175,17 +179,21 @@ span {
 	margin-right: 10px;
 	width: 840px;
 	height: 100%;
+	border-radius: 21px 21px 21px 21px;
+
 	/*background-color: blue;*/
 }
 
 .ad {
 	width: 1010px;
 	height: auto;
+
 }
 
 .ad_1 {
 	width: 844px;
 	height: 550px;
+
 
 }
 
