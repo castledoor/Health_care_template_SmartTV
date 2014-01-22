@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,13 +9,45 @@
     <meta name="author" content="">
 
     <title>Healthcare Template</title>
-    <script type="text/javascript" src="js/gspreadsheet.js"></script>
-    <script type="text/javascript" src="js/healthcare_template.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/jquery.simpleWeather.js"></script>
-    
-    <link rel="stylesheet" href="css/healthcare.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+
+<script> jQuery(document).ready(function($) { $.ajax({ url : "http://api.wunderground.com/api/eauzuu7qujnmux628x8mycs5/geolookup/conditions/q/IA/Cedar_Rapids.json", dataType : "jsonp", success : function(parsed_json) { var location = parsed_json['location']['city']; var temp_f = parsed_json['current_observation']['temp_f']; alert("Current temperature in " + location + " is: " + temp_f); } }); }); </script>
+
+    <link rel="stylesheet" href="css/healthcare11.css">
+    <link rel="stylesheet" href="css/test-weather_33.css">
+    <link rel="stylesheet" href="css/marquee.css">
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-easing-1.3.js"></script>
+<script type="text/javascript" src="js/weatherslider.jquery.js"></script>
+
+
+
+<script>
+function DisplayTime(){
+if (!document.all && !document.getElementById)
+return
+timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+var CurrentDate=new Date()
+var hours=CurrentDate.getHours()
+var minutes=CurrentDate.getMinutes()
+var seconds=CurrentDate.getSeconds()
+var DayNight="PM"
+if (hours<12) DayNight="AM";
+if (hours>12) hours=hours-12;
+if (hours==0) hours=12;
+if (minutes<=9) minutes="0"+minutes;
+if (seconds<=9) seconds="0"+seconds;
+var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+setTimeout("DisplayTime()",1000)
+}
+window.onload=DisplayTime
+</script>
 
     <style>
     #slideshow{height:100%; width:840px; float:left}#slides{height:550px; position:relative}.slide{height:550px; width:840px; overflow:hidden; position:absolute; background:#000; color:#fff}#slides-controls{width:60px; background-color:#fff; height:20px; margin-left:auto; margin-right:auto; padding:5px}#slides-controls a{margin:5px; width:8px; height:8px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; background:#F60; border:1px solid #fff; text-indent:-9000px; display:block; overflow:hidden; float:left}#slides-controls a:hover{background:#F30}#slides-controls a.highlight{background:#fff; border:1px solid #F30}
@@ -55,18 +88,18 @@
       <script type="text/javascript" src="date_time.js"></script>
         <span id="date_time"></span>
       <script type="text/javascript">window.onload = date_time('date_time');</script>
-              
+
   </head>
   <body  onload="setUpSlideShow()">
-
-	  <div id="res_720">
+<script> jQuery(document).ready(function($) { $.ajax({ url : "http://api.wunderground.com/api/Your_Key/geolookup/conditions/q/IA/Cedar_Rapids.json", dataType : "jsonp", success : function(parsed_json) { var location = parsed_json['location']['city']; var temp_f = parsed_json['current_observation']['temp_f']; alert("Current temperature in " + location + " is: " + temp_f); } }); }); </script>
+    <div id="res_720">
       <div id="header_logo">
         <div id="contact-info">
           <p class="cushycms" id="phone_number">1800 - 765 - 9878</p>
           <p class="cushycms" id="website">WWW.<span>SOUTHSIDE</span>.COM</p>
         </div>
         <div class="logo">
-          <img class="logo_image cushycms" src="img/logo_small.png">
+          <img id="logo" class="logo_image cushycms" src="img/logo_small.png">
         </div>
 
       </div>
@@ -78,13 +111,13 @@
                 <div id="box">
                   <div id="slides">
                     <div class="slide">
-                      <img class="cushycms ad_1 slide" src="img/ad_00_small.png">
+                      <img class="cushycms ad_1 slide" id="ad1" src="img/ad_00_small.png">
                     </div>
                     <div class="slide">
-                      <img class="cushycms ad_1 slide" src="img/ad_1_small.png">
+                      <img id="ad2" class="cushycms ad_1 slide" src="img/ad_1_small.png">
                     </div>
                     <div class="slide">
-                      <img class="cushycms ad_1 slide" src="img/ad_2_small.png">
+                      <img id="ad3" class="cushycms ad_1 slide" src="img/ad_2_small.png">
                     </div>
                   </div>
                 </div>  
@@ -108,56 +141,195 @@
             </div>
           </div>
         </div>
-         <h1 id="health_tip">FLU SIGNS AND SYMPTOMS<h1/>
+         
         <div id="weather_time">
+          <div id="weather-space">
 
-
-
-
-          <script type="text/javascript">
-
-            var currentTime = new Date()
-            var hours = currentTime.getHours()
-            var minutes = currentTime.getMinutes()
-
-            if (minutes < 10)
-            minutes = "0" + minutes
-
-            var suffix = "AM";
-            if (hours >= 12) {
-            suffix = "PM";
-            hours = hours - 12;
-            }
-            if (hours == 0) {
-            hours = 12;
-            }
-
-            document.write("<div id='time'>" + hours + ":" + minutes + " " + suffix + "</div>")
-
-          </script>
-          <div id="weather-square"></div>
-          <h1 id="health_tip">FLU SIGNS AND SYMPTOMS</h1>
-        </br>
-          <div id="tips">
-            <ul>
-              <li class="tips_list"> A 100&deg OR HIGHER FEVER </li>
-              <li class="tips_list"> COUGHING AND/OR SORE THROAT</li>
-              <li class="tips_list"> SEVER ACHES AND PAINS IN JOINTS </li>
-              <li class="tips_list"> FATIGUE AND HEADACHES </li>
-              <li class="tips_list"> NAUSEA AND VOMITING </li>
-              <li class="tips_list"> A RUNNY OR STUFFY NOSE </li>
-            </ul>
-            <div id="p">
-             <p>FOR MORE INFO<p>
-             <p>WWW.SOUTHSIDE.COM/HEALTHINFO</p>
-           </div>
           </div>
+
+
+<div class="slider-container" rel="in-header-2-3">
+<div class="sizer">
+
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery("#weatherslider_1").weatherSlider({
+responsive        : true,
+      imgPath           : 'http://kreaturamedia.com/wp-content/plugins/WeatherSlider/img/',
+      WWOAPIKey         : 'eauzuu7qujnmux628x8mycs5',
+      measurement       : 'imperial',
+      timeFormat        : 12,
+      daytime           : [7,19],
+      windyWeather      : 18,
+      icyTemp           : -2,
+      slideDelay        : 0,
+      refreshInterval   : 60000,
+      keybNav           : false,
+      touchNav          : false,
+      hideBackground    : false,
+      enableSearchField : false,
+      alwaysShowSearch  : false,
+      enableWeatherInfo : true,
+      enableForecast    : true,
+      alwaysShowForecast: false,
+      CSSanimations     : true,
+      JSanimations      : true,
+      infoDuration      : 450,
+      reduction         : 'auto',
+      showLoc           : true,
+      showTime          : true,
+      showCond          : false,
+      showTemp          : true,
+      showLow           : false,
+      showHigh          : false,
+      showHum           : false,
+      showPrec          : false,
+      showWind          : false,
+      showPress         : false,
+      showVis           : false,
+      showFDay          : false,
+      showFCond         : false,
+      showFLow          : false,
+      showFHigh         : false,
+      snow        : true,
+      rain          : true,
+      wind        : true,
+      lightnings        : true,
+      windDirection   : 'auto'});
+  });
+</script><div id="weatherslider_1" style="width:410px;height:140px;"><span class="ws-location">GEOLOCATION</span><span class="ws-location">New York, USA</span><span class="ws-location">Olenegorsk, Russia</span><span class="ws-location">Miami, US</span><span class="ws-location">Sydney, Australia</span><span class="ws-location">Kinshasa, Kongo</span><span class="ws-location">Tokyo, Japan</span><span class="ws-location">Bodo, Norway</span><span class="ws-location">Zurich, Switzerland</span></div>
+</div>
+</div>
+          <div id="weather-square">
+                 <!--   <h4><span id="times" /></h4> -->
+<script>
+      $(document).ready(function() {
+  $("#box2 div").fadeOut(0); 
+  $("#box2").mouseenter(function() {
+       $(this).animate({
+           height: "+=250px"});
+             $("#box2 div").fadeIn(500);
+             $("#touch_me").fadeOut(0);
+   });
+  //
+  $("#touch_me").mouseenter(function() {
+       $("#box2").animate({
+           height: "+=250px"});
+             $("#box2 div").fadeIn(500);
+             $("#touch_me").fadeOut(0);
+  });
+  //
+   $("#box2").mouseleave(function() {
+       $(this).animate({
+           height: "-=250px"});
+            $("#box2 div").fadeOut(0); 
+            $("#touch_me").fadeIn(500);
+      
+      
+   });
+   //$('div').click(function() {
+   //    $(this).toggle(1000);
+   //}); 
+});
+
+/*--- clock ---*/
+function updateTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        //var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        //if (seconds < 10){
+       //     seconds = "0" + seconds;
+       // }
+        var real_hours = hours - 12;
+        if (hours > 11){
+          real_hours - 12;
+        } else {
+          real_hours = hours;
+        }
+   if (real_hours === 0) {
+    real_hours = real_hours + 12;
+ }
+  
+   
+        var v = real_hours + ":" + minutes + " ";
+   
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('times').innerHTML=v;
+    }
+    updateTime();
+    </script>
+          </div>
+          <h1 id="health_tip" class="cushycms">FLU SIGNS AND SYMPTOMS</h1>
+        </br>
+          <div id="tips" class="cushycms"><ul>
+  <li class="tips_list">A 100&deg; OR HIGHER FEVER</li>
+  <li class="tips_list">COUGHING AND/OR SORE THROAT</li>
+  <li class="tips_list">SEVER ACHES AND PAINS IN JOINTS</li>
+  <li class="tips_list">FATIGUE AND HEADACHES</li>
+  <li class="tips_list">NAUSEA AND VOMITING</li>
+  <li class="tips_list">A RUNNY OR STUFFY NOSE</li>
+</ul>
+
+<div id="p">
+<p>FOR MORE INFO</p>
+
+<p>&nbsp;</p>
+
+<p>WWW.SOUTHSIDE.COM/HEALTHINFO</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+</div>
           
         </div>
 
       </div>
+
+
+     <script>
+     jQuery(document).ready(function($) {
+       var promoticker = function() {
+         var window_width = window.innerWidth;
+         var speed = 15 * window_width;
+         $('#promo-notifications li:first').animate( {left: '-980px'}, speed, 'linear', function() {
+           $(this).detach().appendTo('#promo-notifications ul').css('left', "100%");
+           promoticker();
+         });
+       };
+       if ($("#promo-notifications li").length > 1) {
+         promoticker();
+       }
+     });
+
+    </script>
+    
       <div id="hashtag_footer">
-        <!-- <img id="twitter-logo"src="img/twitter.png"> -->
+        <div class="cushycms" id="promo-notifications">
+          <ul>  
+            <li>Drop blankets off at any South Side receptionist, donations will be made to the Red Cross.</li>
+            <li> Protect your family, dont forget your flu shots this season</li>
+          </ul>
+        </div>
+
+       
+           
+
+        
+     
     </div>
+
+
+
   </body>
 </html>

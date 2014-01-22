@@ -18,7 +18,17 @@ body {
 div {
 display: block;
 }
-
+.news {
+	 font-family: "NexaBoldRegular";
+	color:white;
+	font-size: 23px;
+	/*position: absolute;*/
+	padding-top: 8px;
+}
+.weather-text_2 {
+	color:white;
+	font-family: "HelveticaLTStdBold";
+}
 
 #res_720 {
 	position: absolute;
@@ -97,16 +107,28 @@ iframe {
 	color: white;
 	position: absolute;
 	z-index: 4;
-	margin-left: 1176px;
-	margin-top: 433px;
-	font-family: "HelveticaLTStdBold"
+	margin-left: 1175px;
+	margin-top: 441px;
+	font-family: "HelveticaLTStdBold";
+	
 	
 }
 
+#times {
+	font-family: "HelveticaLTStdBold";
+	color: white;
+	font-size: 39px;
+	margin-right: -20px;
+	margin-top: 83px;
+	position: absolute;
+}
+
+
+
 #day {
 	text-transform:uppercase;
-	font-size: 29px;
-	margin-left: -90px;
+	font-size: 24px;
+	margin-left: -83px;
 	position: absolute;
 	margin-top:105px;
 	font-family: "HelveticaLTStdLight"
@@ -136,12 +158,12 @@ iframe {
 #weather-square {
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.05);
 	border-radius: 3px 3px 3px 3px;
-	width:170px;
-	height: 110px;
+	width: 170px;
+	height: 121px;
 	background-color: #00aacf;
 	position: absolute;
 	z-index: 0;
-	margin-top: -111px;
+	margin-top: -130px;
 	margin-left: 216px;
 }
 
