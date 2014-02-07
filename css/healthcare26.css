@@ -109,8 +109,9 @@ iframe {
 	position: absolute;
 	z-index: 4;
 	margin-left: 1175px;
-	margin-top: 417px;
+	margin-top: 423px;
 	font-family: "HelveticaLTStdBold";
+	text-align: center;
 	
 	
 }
@@ -129,10 +130,11 @@ iframe {
 #day {
 	text-transform:uppercase;
 	font-size: 24px;
-	margin-left: -78px;
+	margin-left: -88px;
 	position: absolute;
 	margin-top:105px;
-	font-family: "HelveticaLTStdLight"
+	font-family: "HelveticaLTStdLight";
+	text-align: center;
 }
 
 #month {
@@ -140,6 +142,7 @@ iframe {
 	margin-left: -90px;
 	margin-top: 120px;
 	font-size: 19px;
+	text-align: center;
 	
 }
 
