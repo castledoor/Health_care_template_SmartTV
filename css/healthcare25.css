@@ -7,12 +7,13 @@
 }
 
 body {
-/*	background-image:url('../img/background.jpg')!important;
+	/*background-image:url('../img/background.jpg')!important;
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 100%;
-	width: 100%*/;
-
+	width: 100%;*/
+	
+overflow:hidden;
 }
 
 div {
@@ -30,7 +31,7 @@ display: block;
 	font-family: "HelveticaLTStdBold";
 }
 
-#res_720 {
+/*#res_720 {
 	position: absolute;
 	height: 720px;
 	margin-left: -640px;
@@ -41,7 +42,7 @@ display: block;
 	width: 1280px;
 	background-image:url(../img/background_1.png); 
 }
-
+*/
 #header_logo {
 	position: relative;
 	height: 100px;
@@ -108,7 +109,7 @@ iframe {
 	position: absolute;
 	z-index: 4;
 	margin-left: 1175px;
-	margin-top: 441px;
+	margin-top: 417px;
 	font-family: "HelveticaLTStdBold";
 	
 	
@@ -128,7 +129,7 @@ iframe {
 #day {
 	text-transform:uppercase;
 	font-size: 24px;
-	margin-left: -83px;
+	margin-left: -78px;
 	position: absolute;
 	margin-top:105px;
 	font-family: "HelveticaLTStdLight"
@@ -157,13 +158,13 @@ iframe {
 
 #weather-square {
 	box-shadow: 10px 10px 5px rgba(0,0,0,0.05);
-	border-radius: 3px 3px 3px 3px;
+	border-radius: 5px 5px 5px 5px;
 	width: 170px;
 	height: 121px;
 	background-color: #00aacf;
 	position: absolute;
 	z-index: 0;
-	margin-top: -130px;
+	margin-top: -122px;
 	margin-left: 216px;
 }
 
@@ -173,7 +174,8 @@ iframe {
 	font-family: "NexaLightRegular";
 	color: #808080;
 	font-size: 26px;
-	margin-top: 30px;
+	margin-top: 60px;
+	margin-right: 41px;
 }
 
 span {
@@ -198,8 +200,9 @@ span {
 	font-family: "NexaBoldRegular";
 	color: #808080;
 	font-size: 35px;
-	position:relative;
-	margin-bottom: -27px;
+	position: fixed;
+	margin-top: 13px;
+	margin-left: 911px;
 }
 
 
@@ -211,21 +214,13 @@ span {
 	width: 840px;
 	height: 100%;
 	border-radius: 5px 5px 5px 5px;
-
 	/*background-color: blue;*/
 }
 
-.ad {
-	width: 1010px;
-	height: auto;
-
-}
 
 .ad_1 {
 	width: 844px;
 	height: 550px;
-
-
 }
 
 #wrapper {
@@ -254,8 +249,8 @@ span {
 	border-radius: 5px 5px 5px 5px;
 	position: absolute;
 	margin-left: 10px;
-	height: 550px;
-	background: #000013; /* Old browsers */
+	height: 530px;
+	/*background: #000013; /* Old browsers */
 	background: -moz-linear-gradient(top,  #000013 0%, #2989d8 48%, #207cca 57%, #29abe2 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000013), color-stop(48%,#2989d8), color-stop(57%,#207cca), color-stop(100%,#29abe2)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  #000013 0%,#2989d8 48%,#207cca 57%,#29abe2 100%); /* Chrome10+,Safari5.1+ */
@@ -263,10 +258,8 @@ span {
 	background: -ms-linear-gradient(top,  #000013 0%,#2989d8 48%,#207cca 57%,#29abe2 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #000013 0%,#2989d8 48%,#207cca 57%,#29abe2 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000013', endColorstr='#29abe2',GradientType=0 ); /* IE6-9 */
-
     z-index: 0;
 	width: 410px;
-
 }
 
 #weather_time {
@@ -278,28 +271,66 @@ span {
 	margin-left: 10px;
 }
 
-#tips {
+.tips {
 		font-family: "BebasNeueRegular";
 		color:white;
-		margin-left: 30px;
+		margin-top: 30px;
 		clear:both;
-		font-size: 25px;
+		font-size: 40px;
+		margin-left: 44px;
+		
 
 }
+
+.tips1 {
+		font-family: "BebasNeueRegular";
+		color:white;
+		margin-top: 30px;
+		clear:both;
+		font-size: 28px;
+		margin-left: 44px;
+		
+
+}
+
 
 .tips_list {
 	margin-bottom: 5px;
+
+}
+
+.tips-list {
+	font-family: "BebasNeueRegular";
+		color:white;
+		margin-left:35px;
+		margin-top: 30px;
+		clear:both;
+		font-size: 28px;
+
+}
+
+.extra-info {
+	font-family: "BebasNeueRegular";
+		color:white;
+		font-size: 28px;
+		margin-left: 17px
+
 }
 
 #hashtag_footer {
-	margin-top: 10px;
-	margin-left: 10px;
-	position: relative;
-	height: 37px;
-	background-color: #FBB03B;
-	width: 98.4%;
-	border-radius: 5px 5px 5px 5px;
+margin-top: 22px;
+margin-left: -851px;
+position: absolute;
+height: 50px;
+background-color: #FBB03B;
+width: 308.4%;
+border-radius: 5px 5px 5px 5px;
+}
 
+
+
+.help {
+	margin-top: 80px
 }
 
 p{

@@ -626,7 +626,7 @@
 
 			function dateToTimestamp(year,month,day,hour,minute,second){
 				var timestamp = new Date(Date.UTC(year,month-1,day,hour,minute,second));
-				return timestamp.getTime()/1000;
+				return timestamp.getTime/1000;
 			}
 
 			// Getting weather data from World Weather Online
@@ -2431,7 +2431,7 @@
 		ps					: 'Pressure',
 		vi					: 'Visibility',
 
-		get					: 'getting weather',
+		get					: '',
 		not					: 'Location not found',
 		una					: 'Unable to determine your Current Location.',
 		search				: 'Enter your custom location',
